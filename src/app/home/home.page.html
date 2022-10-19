@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      CALCULADORA
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div id="container">
+      <ion-list>
+        <ion-item>
+          <ion-label>Primer Numero</ion-label>
+          <ion-input [(ngModel)]="num1"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>Segundo Numero</ion-label>
+          <ion-input [(ngModel)]="num2"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-button (click)="calcularSuma()">SUMA</ion-button>
+          <ion-button (click)="calcularResta()">RESTA</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-button (click)="calcularMultiplicar()">MULTIPLICAR</ion-button>
+          <ion-button (click)="calcularDividir()">DIVIDIR</ion-button>
+        </ion-item>
+        <ion-item>
+          <ion-label>RESULTADO:</ion-label>
+          {{resultado}}
+        </ion-item>
+        <ion-item>
+          <ion-button (click)="borra()">BORRAR</ion-button>
+        </ion-item>
+      </ion-list>
+    </div>
+</ion-content>
