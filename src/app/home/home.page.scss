@@ -25,3 +25,22 @@
 #container a {
   text-decoration: none;
 }
+
+@media screen and (min-width: 200px) {
+  ion-content {
+    --background: blue;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  ion-content {
+    --background: rgb(7, 212, 243);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #labelResultado {
+  display:none;
+}
+}
